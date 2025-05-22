@@ -12,11 +12,12 @@ class MyApp(ShowBase):
 
         cm = CardMaker("meu_quadrado")
         cm.setFrame(-0.1, 0.1, -0.1, 0.1)
-
         quadrado = NodePath(cm.generate())
-        quadrado.setColor(1,0,0,1)
+        quadrado.setColor(-50,0,0,-50)
+        
 
-        quadrado.setPos(0,0,0)
+
+        quadrado.setPos(-0.8,0,0)
 
         quadrado.reparentTo(self.render2d)
 
